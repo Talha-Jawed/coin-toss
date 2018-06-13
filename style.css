@@ -1,0 +1,33 @@
+body{
+    background-image: url(./12000.jpg);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+p{
+    /* font-size: 50px; */
+    margin: 50px 0px 40px 0px;
+
+}
+#todo{
+    font-size: 60px
+}
+.form-control{
+    display: inline-block;
+    width: 300px;
+    background: none;
+    display: inline;
+    border: 2px solid black
+}
+#div{
+    text-align: center;
+    padding: 20px
+}
+div ol li{
+   text-align: center;
+   font-size: 20px;
+   font-family: cursive;
+   color: white;
+   border-bottom: 2px solid white;
+
+}

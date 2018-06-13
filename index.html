@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="div" >
+        <p><strong id="todo">ToDo App</strong> <br> by ©  <a href="https://www.facebook.com/talha.jawed.71"> <i>Talha</i></a></p>
+        <input id="input" type="text" placeholder="Add todo ... " class="form-control">
+        <button class="btn btn-success" onClick='add()'>ADD</button>
+        <button class="btn btn-danger" onClick='delAll()'>DELETE ALL</button> 
+        <div class="tasks">
+            <ol id="list">
+
+            </ol>    
+        </div>   
+    </div>
+
+    
+
+
+    <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDGcVNslEtu6rdYYYKsdpHA8wMaxdGo7Yk",
+    authDomain: "todo-app-77098.firebaseapp.com",
+    databaseURL: "https://todo-app-77098.firebaseio.com",
+    projectId: "todo-app-77098",
+    storageBucket: "todo-app-77098.appspot.com",
+    messagingSenderId: "594325690081"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
